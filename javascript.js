@@ -1,5 +1,6 @@
 let myLibrary = [];
 
+//Constructor for each book
 function Book(title, author, pages, read){
     this.title = title;
     this.author = author;
@@ -31,6 +32,7 @@ const book3 = new Book("The hobbit3", 'tolkein', 'alot', 'read it');
 
 console.log(book1.reportInfo());
 
+//Used this function with prompts for initial logic before creating form submission
 function addBookToLibrary(){
     let title = prompt("Book title:");
     let author = prompt("Author:");
@@ -46,7 +48,6 @@ function clearFields() {
   }
 
 //Event add a book
-
 bookForm.addEventListener('submit', (e) => {
     // prevent actual submit
     e.preventDefault();
